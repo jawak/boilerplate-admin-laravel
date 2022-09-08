@@ -18,7 +18,10 @@
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^6.1",
         "phpunit/phpunit": "^9.5.10",
-        "spatie/laravel-ignition": "^1.0"
+        "spatie/laravel-ignition": "^1.0",
+        "infyomlabs/laravel-generator": "^5.0",
+        "infyomlabs/adminlte-templates": "^5.0",
+        "doctrine/dbal": "~2.3"
     },
     "autoload": {
         "psr-4": {
