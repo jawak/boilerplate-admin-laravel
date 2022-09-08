@@ -130,7 +130,7 @@ return [
 
     'options' => [
 
-        'soft_delete' => false,
+        'soft_delete' => true,
 
         'save_schema_file' => true,
 
@@ -160,11 +160,11 @@ return [
 
     'prefixes' => [
 
-        'route' => '',  // e.g. admin or admin.shipping or admin.shipping.logistics
+        'route' => 'admin',  // e.g. admin or admin.shipping or admin.shipping.logistics
 
-        'namespace' => '',  // e.g. Admin or Admin\Shipping or Admin\Shipping\Logistics
+        'namespace' => 'admin',  // e.g. Admin or Admin\Shipping or Admin\Shipping\Logistics
 
-        'view' => '',  // e.g. admin or admin/shipping or admin/shipping/logistics
+        'view' => 'admin',  // e.g. admin or admin/shipping or admin/shipping/logistics
     ],
 
     /*
@@ -176,7 +176,7 @@ return [
     |
     */
 
-    'tables' => 'blade',
+    'tables' => 'datatables',
 
     /*
     |--------------------------------------------------------------------------
@@ -207,5 +207,12 @@ return [
 
         'doctrine_mappings' => [],
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Add-Ons
+    |--------------------------------------------------------------------------
+    |
+    */
 
 ];
