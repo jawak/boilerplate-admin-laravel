@@ -12,7 +12,7 @@ use {{ $config->namespaces->request }}\Update{{ $config->modelNames->name }}Requ
 use {{ $config->namespaces->app }}\Http\Controllers\AppBaseController;
 use {{ $config->namespaces->repository }}\{{ $config->modelNames->name }}Repository;
 use Illuminate\Http\Request;
-use Flash;
+use Laracasts\Flash\Flash;
 
 class {{ $config->modelNames->name }}Controller extends AppBaseController
 {

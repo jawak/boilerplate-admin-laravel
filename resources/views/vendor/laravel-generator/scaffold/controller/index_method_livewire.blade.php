@@ -1,4 +1,4 @@
     public function index(Request $request)
     {
-        return view('{{ $config->modelNames->snakePlural }}.index');
+        return view('{{ $config->prefixes->getRoutePrefixWith('.') }}{{ $config->modelNames->snakePlural }}.index');
     }
