@@ -1,2 +1,2 @@
-require('./bootstrap');
-require('admin-lte');
+import bootstrap from './bootstrap'
+import adminLte from 'admin-lte'
