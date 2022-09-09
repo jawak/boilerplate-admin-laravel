@@ -23,7 +23,7 @@ class {{ $config->modelNames->name }}DataTable extends DataTable
     {
         $dataTable = new EloquentDataTable($query);
 
-        return $dataTable->addColumn('action', '{{ $config->modelNames->snakePlural }}.datatables_actions');
+        return $dataTable->addColumn('action', '{{ $config->prefixes->getRoutePrefixWith('.') }}{{ $config->modelNames->snakePlural }}.datatables_actions');
     }
 
     /**
