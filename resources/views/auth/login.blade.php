@@ -18,7 +18,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
     <div class="login-logo">
-        <a href="{{ url('/home') }}"><b>{{ config('app.name') }}</b></a>
+        <a href="{{ route('home') }}"><b>{{ config('app.name') }}</b></a>
     </div>
     <!-- /.login-logo -->
 
@@ -74,13 +74,16 @@
 
                 </div>
             </form>
-
+            @if(Route::has('password.request'))
             <p class="mb-1">
                 <a href="{{ route('password.request') }}">I forgot my password</a>
             </p>
+            @endif
+            @if(Route::has('register'))
             <p class="mb-0">
                 <a href="{{ route('register') }}" class="text-center">Register a new membership</a>
             </p>
+            @endif
         </div>
         <!-- /.login-card-body -->
     </div>

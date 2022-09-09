@@ -18,7 +18,7 @@
 <body class="hold-transition register-page">
 <div class="register-box">
     <div class="register-logo">
-        <a href="{{ url('/home') }}"><b>{{ config('app.name') }}</b></a>
+        <a href="{{ route('home') }}"><b>{{ config('app.name') }}</b></a>
     </div>
 
     <div class="card">

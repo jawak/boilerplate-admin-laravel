@@ -29,7 +29,7 @@
 
         <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown user-menu">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                <a href="#" id="dropdown-profile" class="nav-link dropdown-toggle" data-toggle="dropdown">
                     <img src="https://via.placeholder.com/150x150"
                          class="user-image img-circle elevation-2" alt="User Image">
                     <span class="d-none d-md-inline">{{ Auth::user()->name }}</span>
