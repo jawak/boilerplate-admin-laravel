@@ -1,8 +1,8 @@
 <?php
 
+use App\Http\Controllers\admin\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,4 +28,6 @@ Auth::routes([
 Route::group(['prefix' => 'admin','middleware' => ['auth']], function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
 });
+
+
 
