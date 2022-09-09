@@ -21,3 +21,14 @@ Route::get('/', function () {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
+
+Route::resource('admin/quotes', App\Http\Controllers\admin\QuoteController::class)
+    ->names([
+        'index' => 'admin.quotes.index',
+        'store' => 'admin.quotes.store',
+        'show' => 'admin.quotes.show',
+        'update' => 'admin.quotes.update',
+        'destroy' => 'admin.quotes.destroy',
+        'create' => 'admin.quotes.create',
+        'edit' => 'admin.quotes.edit'
+    ]);

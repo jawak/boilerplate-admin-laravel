@@ -1,9 +1,11 @@
-import lodash from 'lodash'
-import Popper from 'popper.js'
-import jquery from 'jquery'
-import bootstrap from 'bootstrap'
+const lodash = require('lodash')
+const Popper = require('popper.js')
+const $ = require('jquery')
+require('bootstrap')
+require('datatables.net-bs4')
+require('datatables.net-buttons-bs4')
+
 window._ = lodash;
-// window._ = require('lodash');
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -12,11 +14,11 @@ window._ = lodash;
  */
 
 try {
-    window.Popper = Popper.default;
-    window.$ = window.jQuery = jquery;
-
-    // require('bootstrap');
+    // window.Popper = Popper.default;
+    // window.$ = window.jQuery = jquery;
+    window.$ = window.jQuery = $;
 } catch (e) {
+    console.log('error', e)
 }
 
 /**
